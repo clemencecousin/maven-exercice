@@ -23,9 +23,9 @@ public class TripletOfDice {
 	 * Constructors should always be call with a parameters
 	 */
 	TripletOfDice(int numberofsides){
-		this.die1 = (int) (Math.random()*numberofsides + 1);
-		this.die2 = (int) (Math.random()*numberofsides + 1);
-		this.die3 = (int) (Math.random()*numberofsides + 1);
+		this.die1 = 0;
+		this.die2 = 0;
+		this.die3 = 0; //the dice are not launch yet
 		this.numberofsides = numberofsides;
 	}
 	
@@ -88,6 +88,7 @@ public class TripletOfDice {
 	
 	/**
 	 * Allows to have the result of one roll.
+	 * You need to roll at least  one time every dice before executing the toString() method or the result will have no sense
 	 *
 	 * @return a string
 	 */

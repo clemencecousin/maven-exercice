@@ -11,7 +11,9 @@ public class DiceUser {
 	 * @return the object triplet of dice generated
 	 */
 	public static TripletOfDice rollOnce() {
-		return new TripletOfDice(6);
+		TripletOfDice D = new TripletOfDice(6);
+		D.rollAllDice();
+		return D;
 	}
 	
 	/**
