@@ -1,2 +1,4 @@
 target/
-.settings/
+git rm -r --cached .settings
+git rm --cached .classpath
+git rm --cached .project
