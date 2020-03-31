@@ -1,7 +1,1 @@
-/bin/
-.project
 .classpath
-Thumbs.db
-/target/
-*.txt
-.settings
