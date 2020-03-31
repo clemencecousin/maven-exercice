@@ -92,7 +92,11 @@ public class TripletOfDice {
 	 *
 	 * @return a string
 	 */
+	@Override
 	public String toString() {
+		if (this.die1 == 0 || this.die2 == 0 || this.die3 == 0) {
+			throw new IllegalArgumentException("You must roll both dice before seeing their value");
+		}
 		return ("The die number one is a " + this.getFirstDice() + "\nThe die number two is a " + this.getSecondDice() + "\nThe die number three is a " + this.getThirdDice());
 	}
 }
